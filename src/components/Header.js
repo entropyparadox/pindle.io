@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   position: relative;
   height: 50px;
-  top: 100px;
+  top: 60px;
   background: #ebebeb;
   opacity: 0.7;
   z-index: 100;

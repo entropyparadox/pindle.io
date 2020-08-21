@@ -37,11 +37,11 @@ const backgroundImage = [
 
 const SlideImage = styled.div`
   background-image: url(${(props) => props.imgUrl});
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 750px 0px 100px 0px;
+  padding: 600px 0px 100px 0px;
   box-sizing: border-box;
   @media (max-width: 800px) {
     padding: 600px 0px 0px 20px;
