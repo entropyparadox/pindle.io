@@ -44,11 +44,11 @@ const SlideImage = styled.div`
   box-sizing: border-box;
   padding: 70vh 0px 20px 0px;
   @media (max-width: 800px) {
-    height: 800px;
-    padding: 45vh 0px 0px 20px;
+    height: 100vh;
+    padding: 70vh 0px 0px 20px;
   }
   @media (max-width: 400px) {
-    height: 800px;
+    height: 100vh;
     padding: 70vh 0px 0px 20px;
   }
 `;
