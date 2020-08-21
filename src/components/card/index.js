@@ -116,8 +116,8 @@ export const Card = () => {
       </CardBox>
       <CardBox>
         <Profile></Profile>
-        <Name>James Lucian</Name>
-        <Tag>#Faroelslands #Iceland #Norway</Tag>
+        <Name>Samuel</Name>
+        <Tag>#Turkey #India # Thailand</Tag>
         <Description>
           Already a child when learning the European capitals, John was drawn to
           iceland whithout....
@@ -140,7 +140,7 @@ export const Card = () => {
       </CardBox>
       <CardBox>
         <Profile></Profile>
-        <Name>James Lucian</Name>
+        <Name>Alexandria</Name>
         <Tag>#Faroelslands #Iceland #Norway</Tag>
         <Description>
           Already a child when learning the European capitals, John was drawn to
@@ -164,7 +164,7 @@ export const Card = () => {
       </CardBox>
       <CardBox>
         <Profile></Profile>
-        <Name>James Lucian</Name>
+        <Name>Liam</Name>
         <Tag>#Faroelslands #Iceland #Norway</Tag>
         <Description>
           Already a child when learning the European capitals, John was drawn to

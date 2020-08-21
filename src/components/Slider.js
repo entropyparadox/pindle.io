@@ -37,11 +37,12 @@ const backgroundImage = [
 
 const SlideImage = styled.div`
   background-image: url(${(props) => props.imgUrl});
-  height: 1000px;
+  height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 750px 0px 0px 0px;
+  padding: 750px 0px 100px 0px;
+  box-sizing: border-box;
   @media (max-width: 800px) {
     padding: 600px 0px 0px 20px;
     height: 800px;
@@ -96,7 +97,7 @@ const AppLogo = styled.img`
 export const Slider = () => {
   return (
     <div>
-      <Carousel controls={false} indicators={false} interval={700}>
+      <Carousel controls={false} indicators={false} interval={7000}>
         {backgroundImage.map((i) => (
           <Carousel.Item>
             <SlideImage imgUrl={i.image}>
