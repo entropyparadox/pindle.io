@@ -31,7 +31,7 @@ const Description = styled.div`
 `;
 
 const ReadMore = styled.button`
-  width: 100px;
+  width: 120px;
   height: 40px;
   margin-left: auto;
   display: flex;
