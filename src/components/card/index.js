@@ -27,12 +27,11 @@ const CardBox = styled.div`
   }
 `;
 
-const Profile = styled.div`
+const Profile = styled.img`
   width: 90px;
   height: 90px;
-  background: #eaeaea;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 18px;
   margin-bottom: 20px;
   @media (max-width: 800px) {
     width: 60px;
@@ -91,7 +90,10 @@ export const Card = () => {
   return (
     <Container>
       <CardBox>
-        <Profile></Profile>
+        <Profile
+          src="https://images.unsplash.com/photo-1525879000488-bff3b1c387cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3634&q=80"
+          alt="img"
+        ></Profile>
         <Name>James Lucian</Name>
         <Tag>#Faroelslands #Iceland #Norway</Tag>
         <Description>
@@ -115,7 +117,10 @@ export const Card = () => {
         </Story>
       </CardBox>
       <CardBox>
-        <Profile></Profile>
+        <Profile
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+          alt="img"
+        ></Profile>
         <Name>Samuel</Name>
         <Tag>#Turkey #India # Thailand</Tag>
         <Description>
@@ -139,7 +144,10 @@ export const Card = () => {
         </Story>
       </CardBox>
       <CardBox>
-        <Profile></Profile>
+        <Profile
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          alt="img"
+        ></Profile>
         <Name>Alexandria</Name>
         <Tag>#Faroelslands #Iceland #Norway</Tag>
         <Description>
@@ -163,7 +171,10 @@ export const Card = () => {
         </Story>
       </CardBox>
       <CardBox>
-        <Profile></Profile>
+        <Profile
+          src="https://images.unsplash.com/photo-1545912453-db258ca9b7b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+          alt="img"
+        ></Profile>
         <Name>Liam</Name>
         <Tag>#Faroelslands #Iceland #Norway</Tag>
         <Description>
