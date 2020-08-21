@@ -42,20 +42,16 @@ const SlideImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
+  padding: 70vh 0px 20px 0px;
   @media (max-width: 800px) {
     height: 800px;
+    padding: 70vh 0px 0px 20px;
   }
 `;
 
 const SlideTitleBox = styled.div`
   max-width: 1250px;
   margin: 0 auto;
-  position: absolute;
-  bottom: 80px;
-  left: 200px;
-  @media (max-width: 800px) {
-    left: 20px;
-  }
 `;
 
 const MainTitle = styled.div`
