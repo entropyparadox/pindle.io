@@ -97,7 +97,7 @@ const AppLogo = styled.img`
 export const Slider = () => {
   return (
     <div>
-      <Carousel controls={false} indicators={false} interval={7000}>
+      <Carousel controls={false} indicators={false} interval={2500}>
         {backgroundImage.map((i) => (
           <Carousel.Item>
             <SlideImage imgUrl={i.image}>

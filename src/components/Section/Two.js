@@ -16,6 +16,11 @@ const Title = styled.div`
   color: #000066;
   font-size: 62px;
   margin-bottom: 100px;
+  @media (max-width: 800px) {
+    font-size: 47px;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
 `;
 
 const ImageBox = styled.div`

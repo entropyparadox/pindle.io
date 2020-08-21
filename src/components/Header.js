@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { MobileNav } from "./MobileNav";
 
 const Container = styled.div`
   position: relative;
@@ -35,26 +36,47 @@ const MenuList = styled.ul`
   color: #000;
   margin: 0;
   @media (max-width: 800px) {
-    width: 200px;
-    overflow-x: scroll;
+    display: none;
+  }
+`;
+
+const MenuLogo = styled.img`
+  width: 24px;
+  height: 20px;
+  @media (min-width: 801px) {
+    display: none;
   }
 `;
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <Container>
-      <HeaderBox>
-        <div>
-          <LogoImage src="img/logo.svg" />
-        </div>
-        <MenuList>
-          <li>ABOUT</li>
-          <li>PARTNERS</li>
-          <li>JOBS</li>
-          <li>CONTACT</li>
-          <li>AMBASSADORS</li>
-        </MenuList>
-      </HeaderBox>
-    </Container>
+    <>
+      <Container>
+        <HeaderBox>
+          <div>
+            <LogoImage src="img/logo.svg" />
+          </div>
+          <MenuList>
+            <li>ABOUT</li>
+            <li>PARTNERS</li>
+            <li>JOBS</li>
+            <li>CONTACT</li>
+            <li>AMBASSADORS</li>
+          </MenuList>
+          <MenuLogo src="/img/menu.svg" alt="logo" onClick={handleOpen} />
+        </HeaderBox>
+      </Container>
+      {isOpen ? <MobileNav handleClose={handleClose} /> : ""}
+    </>
   );
 };

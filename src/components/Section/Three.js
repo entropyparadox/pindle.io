@@ -15,6 +15,10 @@ const Title = styled.div`
   color: #000066;
   font-size: 60px;
   margin-left: 20px;
+  @media (max-width: 800px) {
+    font-size: 47px;
+    font-weight: bold;
+  }
 `;
 
 const Description = styled.div`
