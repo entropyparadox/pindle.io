@@ -14,10 +14,10 @@ const CardBox = styled.div`
   border: 1px solid #ebebeb;
   padding: 30px;
   width: 270px;
-  height: 520px;
+  // height: 520px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.1);
   margin-bottom: 50px;
   @media (max-width: 800px) {
     margin: 0 auto;
@@ -40,7 +40,7 @@ const Profile = styled.img`
 `;
 
 const Name = styled.div`
-  font-weight: bold;
+  font-weight: 400;
   font-size: 18px;
   margin-bottom: 25px;
   @media (max-width: 800px) {
@@ -60,7 +60,7 @@ const Tag = styled.div`
 `;
 
 const Description = styled.div`
-  font-weight: bold;
+  font-weight: 400;
   font-size: 12px;
   @media (max-width: 800px) {
     font-size: 10px;

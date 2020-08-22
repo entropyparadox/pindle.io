@@ -13,11 +13,12 @@ const Container = styled.div`
 
 const Title = styled.div`
   color: #000066;
-  font-size: 60px;
+  font-size: 54px;
+  font-weight: 900;
   margin-left: 20px;
   @media (max-width: 800px) {
     font-size: 47px;
-    font-weight: bold;
+    font-weight: 400;
   }
 `;
 

@@ -42,7 +42,7 @@ const SlideImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  padding: 70vh 0px 20px 0px;
+  padding: 70vh 0px 50px 0px;
   @media (max-width: 800px) {
     height: 100vh;
     padding: 70vh 0px 0px 20px;
@@ -90,11 +90,12 @@ const LogoBox = styled.div`
 `;
 
 const AppLogo = styled.img`
-  width: 35px;
-  height: 35px;
+  width: 150px;
+  margin-right: 16px;
+  
   @media (max-width: 800px) {
-    width: 30px;
-    height: 30px;
+    width: 140px;
+    margin-right: 8px;
   }
 `;
 
@@ -114,8 +115,8 @@ export const Slider = () => {
                   interests - by pinning photo to a map.
                 </SubTitle>
                 <LogoBox>
-                  <AppLogo src="/img/apple_logo.svg" alt="logo" />
-                  <AppLogo src="/img/google_logo.svg" alt="logo" />
+                  <a href="https://apps.apple.com/kr/app/pindle/id1523281916"><AppLogo src="/img/apple_logo.svg" alt="logo" target="_blank"/></a>
+                  <a href="https://play.google.com/store/apps/details?id=co.pindle.travel"><AppLogo src="/img/google_logo.svg" alt="logo" target="_blank"/></a>
                 </LogoBox>
               </SlideTitleBox>
             </SlideImage>

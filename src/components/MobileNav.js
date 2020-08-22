@@ -28,7 +28,7 @@ const MenuMobileContainer = styled.div`
   top: 0;
   width: 200px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: -0.3px;
   z-index: 10000;
   height: auto;

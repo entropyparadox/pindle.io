@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const MainTitle = styled.div`
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 400;
   color: #000066;
   @media (max-width: 800px) {
     font-size: 30px;
@@ -39,7 +39,7 @@ const MainTitle = styled.div`
 
 const SubTitle = styled.div`
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   color: #000;
   @media (max-width: 800px) {
     font-size: 12px;

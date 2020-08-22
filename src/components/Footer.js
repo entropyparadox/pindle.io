@@ -18,7 +18,7 @@ const Box = styled.div`
 `;
 
 const LogoImage = styled.img`
-  height: 100px;
+  height: 50px;
   @media (max-width: 800px) {
     width: 200px;
   }

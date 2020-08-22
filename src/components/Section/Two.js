@@ -14,11 +14,12 @@ const Container = styled.div`
 const Title = styled.div`
   text-align: center;
   color: #000066;
-  font-size: 62px;
+  font-size: 50px;
+  font-weight: 900;
   margin-bottom: 100px;
   @media (max-width: 800px) {
     font-size: 47px;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 80px;
   }
 `;
@@ -74,13 +75,13 @@ const Category = styled.span`
   text-align: center;
   color: #000066;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 400;
 `;
 
 const MobileCategory = styled.div`
   color: #000066;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 400;
   margin: 0 auto;
   margin-bottom: 10px;
   @media (min-width: 800px) {
