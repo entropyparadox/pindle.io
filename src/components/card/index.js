@@ -91,7 +91,7 @@ export const Card = () => {
     <Container>
       <CardBox>
         <Profile
-          src="https://images.unsplash.com/photo-1525879000488-bff3b1c387cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3634&q=80"
+          src="/img/0001.jpg"
           alt="img"
         ></Profile>
         <Name>James Lucian</Name>
@@ -118,7 +118,7 @@ export const Card = () => {
       </CardBox>
       <CardBox>
         <Profile
-          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+          src="/img/0002.jpg"
           alt="img"
         ></Profile>
         <Name>Samuel</Name>
@@ -145,7 +145,7 @@ export const Card = () => {
       </CardBox>
       <CardBox>
         <Profile
-          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          src="/img/0003.jpg"
           alt="img"
         ></Profile>
         <Name>Alexandria</Name>
@@ -172,7 +172,7 @@ export const Card = () => {
       </CardBox>
       <CardBox>
         <Profile
-          src="https://images.unsplash.com/photo-1545912453-db258ca9b7b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+          src="/img/0004.jpg"
           alt="img"
         ></Profile>
         <Name>Liam</Name>
