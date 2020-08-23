@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const backgroundImage = [
   {
-    image: "/img/0.jpg",
+    image: "/img/11.jpg",
   },
   {
     image: "/img/1.jpg",
@@ -42,10 +42,10 @@ const SlideImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  padding: 70vh 0px 50px 0px;
+  padding: 65vh 0px 70px 0px;
   @media (max-width: 800px) {
     height: 100vh;
-    padding: 70vh 0px 0px 20px;
+    padding: 65vh 0px 0px 20px;
   }
   @media (max-width: 400px) {
     height: 100vh;
@@ -63,7 +63,8 @@ const MainTitle = styled.div`
   color: #fff;
   line-height: 85px;
   @media (max-width: 800px) {
-    font-size: 60px;
+    font-size: 52px;
+    font-weight: 600;
     line-height: 65px;
   }
 `;
