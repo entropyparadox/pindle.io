@@ -18,8 +18,8 @@ const Title = styled.div`
   font-weight: 900;
   margin-bottom: 100px;
   @media (max-width: 800px) {
-    font-size: 47px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 900;
     margin-bottom: 80px;
   }
 `;

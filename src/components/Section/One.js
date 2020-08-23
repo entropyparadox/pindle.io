@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const MainTitle = styled.div`
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 700;
   color: #000066;
   @media (max-width: 800px) {
     font-size: 30px;
