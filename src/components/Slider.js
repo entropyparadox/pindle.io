@@ -31,7 +31,7 @@ const backgroundImage = [
     image: "/img/8.jpg",
   },
   {
-    image: "/img/9.jpg",
+    image: "/img/10.jpg",
   },
 ];
 
