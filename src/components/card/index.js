@@ -1,29 +1,96 @@
 import React from "react";
 import styled from "styled-components";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+
+const cardlist = [
+  {
+    image: "/img/0001.jpg",
+    name: "James Lucian",
+    tag: "#Faroelslands #Iceland #Norway",
+    description:
+      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+    star: "⭐️⭐️⭐️⭐️",
+    review:
+      "At first, I couldnt undrstand how to use it,but the more one used Pindle,the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+  },
+  {
+    image: "/img/0002.jpg",
+    name: "Samuel",
+    tag: "#Turkey #India # Thailand",
+    description:
+      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+    star: "⭐️⭐️⭐️",
+    review:
+      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+  },
+  {
+    image: "/img/0003.jpg",
+    name: "Alexandria",
+    tag: "#Faroelslands #Iceland #Norway",
+    description:
+      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+    star: "⭐️⭐️⭐️⭐️",
+    review:
+      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "Liam",
+    tag: "#Faroelslands #Iceland #Norway",
+    description:
+      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+    star: "⭐️⭐️⭐️⭐️⭐️",
+    review:
+      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+  },
+  {
+    image: "/img/0002.jpg",
+    name: "Samuel",
+    tag: "#Turkey #India # Thailand",
+    description:
+      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+    star: "⭐️⭐️⭐️",
+    review:
+      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+  },
+];
 
 const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
   @media (max-width: 800px) {
-    display: block;
-    padding: 0px 20px;
+    display: none;
+  }
+`;
+
+const MobileContainer = styled.div`
+  margin: 0 auto;
+  width: 230px;
+  @media (min-width: 801px) {
+    display: none;
   }
 `;
 
 const CardBox = styled.div`
   border: 1px solid #ebebeb;
   padding: 30px;
-  width: 270px;
-  // height: 520px;
+  height: 520px;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.1);
+  box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.03);
   margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  :focus {
+    outline: none;
+  }
   @media (max-width: 800px) {
     margin: 0 auto;
     height: 450px;
-    width: 250px;
+    width: 230px !important;
     margin-bottom: 50px;
+  }
+  @media (min-width: 801px) {
+    width: 290px !important;
   }
 `;
 
@@ -86,117 +153,193 @@ const Story = styled.div`
   font-size: 8px;
 `;
 
-export const Card = () => {
+const LeftArrow = styled.div`
+  background-image: url("/img/Arrow.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 300px;
+  cursor: pointer;
+  left: -90px;
+`;
+
+const RightArrow = styled.div`
+  background-image: url("/img/ArrowRight.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 1320px;
+  bottom: 300px;
+  cursor: pointer;
+  z-index: -1;
+`;
+
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
   return (
-    <Container>
-      <CardBox>
-        <Profile
-          src="/img/0001.jpg"
-          alt="img"
-        ></Profile>
-        <Name>James Lucian</Name>
-        <Tag>#Faroelslands #Iceland #Norway</Tag>
-        <Description>
-          Already a child when learning the European capitals, John was drawn to
-          iceland whithout....
-        </Description>
-        <Line />
-        <Star>⭐️⭐️</Star>
-        <Story>
-          At first, I couldnt undrstand how to use it, <br />
-          but the more one used Pindle,
-          <br />
-          the more you realise what a useful app this is! Imagine going to a
-          foreign country
-          <br />
-          and not knowing the language,
-          <br />
-          this app allows you to instantly record places
-          <br />
-          you have been!
-        </Story>
-      </CardBox>
-      <CardBox>
-        <Profile
-          src="/img/0002.jpg"
-          alt="img"
-        ></Profile>
-        <Name>Samuel</Name>
-        <Tag>#Turkey #India # Thailand</Tag>
-        <Description>
-          Already a child when learning the European capitals, John was drawn to
-          iceland whithout....
-        </Description>
-        <Line />
-        <Star>⭐️⭐️⭐️⭐️</Star>
-        <Story>
-          At first, I couldnt undrstand how to use it, <br />
-          but the more one used Pindle,
-          <br />
-          the more you realise what a useful app this is! Imagine going to a
-          foreign country
-          <br />
-          and not knowing the language,
-          <br />
-          this app allows you to instantly record places
-          <br />
-          you have been!
-        </Story>
-      </CardBox>
-      <CardBox>
-        <Profile
-          src="/img/0003.jpg"
-          alt="img"
-        ></Profile>
-        <Name>Alexandria</Name>
-        <Tag>#Faroelslands #Iceland #Norway</Tag>
-        <Description>
-          Already a child when learning the European capitals, John was drawn to
-          iceland whithout....
-        </Description>
-        <Line />
-        <Star>⭐️⭐️⭐️⭐️⭐️</Star>
-        <Story>
-          At first, I couldnt undrstand how to use it, <br />
-          but the more one used Pindle,
-          <br />
-          the more you realise what a useful app this is! Imagine going to a
-          foreign country
-          <br />
-          and not knowing the language,
-          <br />
-          this app allows you to instantly record places
-          <br />
-          you have been!
-        </Story>
-      </CardBox>
-      <CardBox>
-        <Profile
-          src="/img/0004.jpg"
-          alt="img"
-        ></Profile>
-        <Name>Liam</Name>
-        <Tag>#Faroelslands #Iceland #Norway</Tag>
-        <Description>
-          Already a child when learning the European capitals, John was drawn to
-          iceland whithout....
-        </Description>
-        <Line />
-        <Star>⭐️⭐️⭐️</Star>
-        <Story>
-          At first, I couldnt undrstand how to use it, <br />
-          but the more one used Pindle,
-          <br />
-          the more you realise what a useful app this is! Imagine going to a
-          foreign country
-          <br />
-          and not knowing the language,
-          <br />
-          this app allows you to instantly record places
-          <br />
-          you have been!
-        </Story>
-      </CardBox>
-    </Container>
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        right: -100,
+        width: 50,
+        height: 50,
+        top: "50%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        left: -100,
+        width: 50,
+        height: 50,
+        top: "50%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const MobileLeftArrow = styled.div`
+  background-image: url("/img/Arrow.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 265px;
+  cursor: pointer;
+  left: -50px;
+`;
+
+const MobileRightArrow = styled.div`
+  background-image: url("/img/ArrowRight.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 260px;
+  bottom: 265px;
+  cursor: pointer;
+  z-index: -1;
+`;
+
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        right: -55,
+        width: 40,
+        height: 40,
+        top: "50%",
+        transform: "translateY(-50%)",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const PrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        left: -55,
+        width: 40,
+        height: 40,
+        top: "50%",
+        transform: "translateY(-50%)",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+export const Card = () => {
+  var settings = {
+    infinite: true,
+    speed: 900,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+  };
+
+  var setting = {
+    infinite: true,
+    speed: 900,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplay: true,
+  };
+  return (
+    <>
+      <Container>
+        <LeftArrow />
+        <div>
+          <Slider {...settings}>
+            {cardlist.map((card) => (
+              <CardBox>
+                <Profile src={card.image} />
+                <Name>{card.name}</Name>
+                <Tag>{card.tag}</Tag>
+                <Description>{card.description}</Description>
+                <Line />
+                <Star>{card.star}</Star>
+                <Story>{card.review}</Story>
+              </CardBox>
+            ))}
+          </Slider>
+        </div>
+        <RightArrow />
+      </Container>
+      <MobileContainer>
+        <MobileLeftArrow />
+        <div>
+          <Slider {...setting}>
+            {cardlist.map((card) => (
+              <CardBox>
+                <Profile src={card.image} />
+                <Name>{card.name}</Name>
+                <Tag>{card.tag}</Tag>
+                <Description>{card.description}</Description>
+                <Line />
+                <Star>{card.star}</Star>
+                <Story>{card.review}</Story>
+              </CardBox>
+            ))}
+          </Slider>
+        </div>
+        <MobileRightArrow />
+      </MobileContainer>
+    </>
   );
 };

@@ -1,13 +1,57 @@
 import React from "react";
 import styled from "styled-components";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+
+const list = [
+  {
+    image: "/img/section3_01.jpg",
+    title: "Capture",
+    direction:
+      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+  },
+  {
+    image: "/img/section3_02.jpg",
+    title: "Pin",
+    direction:
+      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+  },
+  {
+    image: "/img/section3_03.jpg",
+    title: "Share",
+    direction:
+      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+  },
+  {
+    image: "/img/section3_04.jpg",
+    title: "Categories",
+    direction:
+      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+  },
+  {
+    image: "/img/section3_05.jpg",
+    title: "Discover and re-discover",
+    direction:
+      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+  },
+];
 
 const Container = styled.div`
   max-width: 1250px;
   margin: 0 auto;
   margin-top: 120px;
   @media (max-width: 800px) {
-    margin-top: 330px;
-    padding: 0px 20px;
+    display: none;
+  }
+`;
+
+const MobileContainer = styled.div`
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 330px;
+  padding: 0px 20px;
+  @media (min-width: 801px) {
+    display: none;
   }
 `;
 
@@ -24,238 +68,222 @@ const Title = styled.div`
   }
 `;
 
-const ImageBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  @media (max-width: 800px) {
-    display: none;
-  }
-`;
-
-const MobileImageBox = styled.div`
-  padding: 0px 20px;
-  width: 100%;
+const SliderContainer = styled.div`
   text-align: center;
-  @media (min-width: 800px) {
-    display: none;
+`;
+
+const SliderItem = styled.div`
+  :focus {
+    outline: none;
   }
 `;
 
-const MobileImage = styled.img`
+const SliderImg = styled.img`
   width: 200px;
-  margin-bottom: 50px;
-  @media (max-width: 800px) {
-    width: 100px;
-    margin-right: 20px;
-  }
-`;
-
-const MobileImages = styled.img`
-  width: 150px;
-  margin-bottom: 30px;
-  @media (min-width: 800px) {
-    display: none;
-  }
-`;
-
-const TextBox = styled.div`
-  display: flex;
   margin: 0 auto;
-  max-width: 1155px;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 50px;
-  @media (max-width: 800px) {
-    display: none;
-  }
 `;
 
-const Category = styled.span`
-  width: 110px;
-  text-align: center;
-  color: #000066;
+const SliderTitle = styled.div`
+  margin: 0 auto;
+  color: rgb(0, 0, 102);
   font-size: 20px;
   font-weight: 400;
-`;
-
-const MobileCategory = styled.div`
-  color: #000066;
-  font-size: 22px;
-  font-weight: 400;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  @media (min-width: 800px) {
-    display: none;
-  }
-`;
-
-const Line = styled.hr`
+  margin-top: 85px;
+  margin-bottom: 85px;
   width: 120px;
-  border: 1px solid #bebebe;
-  @media (max-width: 800px) {
-    width: 30px;
-  }
 `;
 
-const DescriptionBox = styled.div`
-  display: flex;
-  align-items: center;
-  max-width: 1285px;
+const SliderDescription = styled.div`
   margin: 0 auto;
-  margin-bottom: 100px;
-  @media (max-width: 800px) {
-    display: none;
-  }
-`;
-
-const Description = styled.span`
-  text-align: center;
+  width: 200px;
   font-size: 12px;
 `;
 
-const MobileDescription = styled.div`
-  text-align: center;
-  font-size: 12px;
-  margin-bottom: 50px;
-  @media (min-width: 800px) {
-    display: none;
-  }
+const LeftArrow = styled.div`
+  background-image: url("/img/Arrow.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 360px;
+  cursor: pointer;
+  left: -90px;
 `;
+
+const RightArrow = styled.div`
+  background-image: url("/img/ArrowRight.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 1320px;
+  bottom: 360px;
+  cursor: pointer;
+  z-index: -1;
+`;
+
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        right: -100,
+        width: 50,
+        height: 50,
+        top: "50%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        left: -100,
+        width: 50,
+        height: 50,
+        top: "50%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const MobileLeftArrow = styled.div`
+  background-image: url("/img/Arrow.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 360px;
+  cursor: pointer;
+  left: 10px;
+`;
+
+const MobileRightArrow = styled.div`
+  background-image: url("/img/ArrowRight.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 305px;
+  bottom: 360px;
+  cursor: pointer;
+  z-index: -1;
+`;
+
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        right: 0,
+        width: 50,
+        height: 50,
+        top: "50%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const PrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        left: 0,
+        width: 50,
+        height: 50,
+        top: "50%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+        zIndex: "1000",
+      }}
+      onClick={onClick}
+    />
+  );
+};
 
 export const Two = () => {
+  var settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+  };
+
+  var setting = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplay: true,
+  };
   return (
     <>
       <Container>
         <Title>How it work</Title>
-        <ImageBox>
-          <MobileImage src="/img/section3_01.jpg" alt="logo" />
-          <MobileImage src="/img/section3_02.jpg" alt="logo" />
-          <MobileImage src="/img/section3_03.jpg" alt="logo" />
-          <MobileImage src="/img/section3_04.jpg" alt="logo" />
-          <MobileImage src="/img/section3_05.jpg" alt="logo" />
-        </ImageBox>
-        <TextBox>
-          <Category>Capture</Category>
-          <Line />
-          <Category>Pin</Category>
-          <Line />
-          <Category>Share</Category>
-          <Line />
-          <Category>Categories</Category>
-          <Line />
-          <Category>
-            Discover
-            <br />
-            and
-            <br />
-            re-discover
-          </Category>
-        </TextBox>
+        <LeftArrow></LeftArrow>
+        <SliderContainer>
+          <Slider {...settings} style={{ outline: "none" }}>
+            {list.map((l) => (
+              <SliderItem>
+                <SliderImg src={l.image} alt="logo" />
+                <SliderTitle>{l.title}</SliderTitle>
+                <SliderDescription>{l.direction}</SliderDescription>
+              </SliderItem>
+            ))}
+          </Slider>
+        </SliderContainer>
+        <RightArrow></RightArrow>
       </Container>
-      <DescriptionBox>
-        <Description style={{ marginRight: 80 }}>
-          Take any picture with the
-          <br />
-          Pindle camera - your surroundings, your
-          <br />
-          favorite corner, anything!
-        </Description>
-        <Description style={{ marginRight: 105 }}>
-          Your picture will be
-          <br />
-          automatically pinned on the
-          <br />
-          map via geotagging!
-        </Description>
-        <Description style={{ marginRight: 65 }}>
-          Share your stories and pins
-          <br />
-          with your friends!
-        </Description>
-        <Description>
-          Choose the categories you want to explore!
-          <br />
-          The categories include Culture, Food & Drink,
-          <br />
-          Shopping, Nature, Lodging, Leisure.
-        </Description>
-        <Description>
-          Discover untold stories and hidden
-          <br />
-          attractions on the Pindle app.
-          <br />
-          Re-discover a street you’ve been ignoring.
-        </Description>
-      </DescriptionBox>
-
-      <MobileImageBox>
-        <MobileImages src="/img/section3_01.jpg" alt="logo"></MobileImages>
-        <MobileCategory>Capture</MobileCategory>
-        <Line />
-        <MobileDescription>
-          Take any picture with the
-          <br />
-          Pindle camera - your surroundings, your
-          <br />
-          favorite corner, anything!
-        </MobileDescription>
-      </MobileImageBox>
-
-      <MobileImageBox>
-        <MobileImages src="/img/section3_02.jpg" alt="logo"></MobileImages>
-        <MobileCategory>Pin</MobileCategory>
-        <Line />
-        <MobileDescription>
-          Your picture will be
-          <br />
-          automatically pinned on the
-          <br />
-          map via geotagging!
-        </MobileDescription>
-      </MobileImageBox>
-
-      <MobileImageBox>
-        <MobileImages src="/img/section3_03.jpg" alt="logo"></MobileImages>
-        <MobileCategory>Share</MobileCategory>
-        <Line />
-        <MobileDescription>
-          Share your stories and pins
-          <br />
-          with your friends!
-        </MobileDescription>
-      </MobileImageBox>
-
-      <MobileImageBox>
-        <MobileImages src="/img/section3_04.jpg" alt="logo"></MobileImages>
-        <MobileCategory>Categories</MobileCategory>
-        <Line />
-        <MobileDescription>
-          Choose the categories you want to explore!
-          <br />
-          The categories include Culture, Food & Drink,
-          <br />
-          Shopping, Nature, Lodging, Leisure.
-        </MobileDescription>
-      </MobileImageBox>
-
-      <MobileImageBox>
-        <MobileImages src="/img/section3_05.jpg" alt="logo"></MobileImages>
-        <MobileCategory>
-          Discover
-          <br />
-          and
-          <br />
-          re-discover
-        </MobileCategory>
-        <Line />
-        <MobileDescription>
-          Discover untold stories and hidden
-          <br />
-          attractions on the Pindle app.
-          <br />
-          Re-discover a street you’ve been ignoring.
-        </MobileDescription>
-      </MobileImageBox>
+      <MobileContainer>
+        <Title>How it work</Title>
+        <MobileLeftArrow />
+        <SliderContainer>
+          <Slider {...setting} style={{ outline: "none", border: "none" }}>
+            {list.map((l) => (
+              <SliderItem>
+                <SliderImg src={l.image} alt="logo" />
+                <SliderTitle>{l.title}</SliderTitle>
+                <SliderDescription>{l.direction}</SliderDescription>
+              </SliderItem>
+            ))}
+          </Slider>
+        </SliderContainer>
+        <MobileRightArrow />
+      </MobileContainer>
     </>
   );
 };

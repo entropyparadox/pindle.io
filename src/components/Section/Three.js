@@ -43,6 +43,7 @@ const ReadMore = styled.button`
   background-color: #20b2aa;
   color: #ffffff;
   margin-bottom: 100px;
+  margin-right: 10px;
   @media (max-width: 800px) {
     margin: 0 auto;
   }
