@@ -87,6 +87,8 @@ const LogoImg = styled.img`
   width: 60px;
   @media (max-width: 800px) {
     margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
   }
 `;
 
