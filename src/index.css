@@ -3,6 +3,8 @@ body {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  text-decoration: none;
 }
 
 code {

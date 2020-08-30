@@ -7,7 +7,6 @@ const Container = styled.div`
   position: relative;
   height: 50px;
   top: 60px;
-  background: #ebebeb;
   opacity: 0.7;
   z-index: 100;
   box-sizing: border-box;
@@ -34,8 +33,10 @@ const MenuList = styled.ul`
   list-style: none;
   width: 570px;
   justify-content: space-between;
+  font-weight: bold;
   color: #000;
   margin: 0;
+  text-decoration: none;
   @media (max-width: 800px) {
     display: none;
   }
@@ -49,7 +50,7 @@ const MenuLogo = styled.img`
   }
 `;
 
-export const Header = () => {
+export const DetailHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {

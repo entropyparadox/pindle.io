@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const MenuContainer = styled.div`
   bottom: 0;
@@ -44,11 +45,27 @@ export const MobileNav = ({ handleClose }) => {
       <Backdrop onClick={handleClose} />
       <MenuMobileContainer>
         <ul>
-          <li>ABOUT</li>
-          <li>PARTNERS</li>
-          <li>JOBS</li>
-          <li>CONTACT</li>
-          <li>AMBASSADORS</li>
+          <Link to={"/about"} style={{ textDecoration: "none", color: "#000" }}>
+            <li>ABOUT</li>
+          </Link>
+          <Link
+            to={"/partners"}
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            <li>PARTNERS</li>
+          </Link>
+          <Link
+            to={"/ambassadors"}
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            <li>AMBASSADORS</li>
+          </Link>
+          <Link
+            to={"/contact"}
+            style={{ textDecoration: "none", color: "#000" }}
+          >
+            <li>CONTACT</li>
+          </Link>
         </ul>
       </MenuMobileContainer>
     </MenuContainer>
