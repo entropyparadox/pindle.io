@@ -5,42 +5,42 @@ import { Apply } from "../components/Apply";
 
 const Profile = [
   {
-    image: "/img/자산 11@3x-100.jpg",
+    image: "/img/001.jpg",
     name: "James Lucian",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/자산 12@3x-100.jpg",
+    image: "/img/002.jpg",
     name: "James Lucian",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/자산 13@3x-100.jpg",
+    image: "/img/003.jpg",
     name: "James Lucian",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/자산 14@3x-100.jpg",
+    image: "/img/004.jpg",
     name: "James Lucian",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/자산 15@3x-100.jpg",
+    image: "/img/005.jpg",
     name: "James Lucian",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/자산 16@3x-100.jpg",
+    image: "/img/006.jpg",
     name: "James Lucian",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
@@ -79,7 +79,6 @@ const ProfileContainer = styled.div`
 
 const ProfileBox = styled.div`
   width: 190px;
-  height: 280px;
   border: 1px solid #ebebeb;
   text-align: center;
   padding: 30px 20px;

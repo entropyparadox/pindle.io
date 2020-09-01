@@ -6,33 +6,39 @@ import "slick-carousel/slick/slick.css";
 const list = [
   {
     image: "/img/section3_01.jpg",
-    title: "Capture",
+    title: "Discover and re-discover",
     direction:
-      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+      "Discover untold stories and hidden attractions on the Pindle app. Re-discover a street you’ve been ignoring. ",
   },
   {
     image: "/img/section3_02.jpg",
-    title: "Pin",
+    title: "Choose The categories",
     direction:
-      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+      "Choose the categories you want to explore! The categories include Culture, Food & Drink, Shopping, Nature, Lodging, Leisure.",
   },
   {
     image: "/img/section3_03.jpg",
-    title: "Share",
+    title: "Let’s Search",
     direction:
-      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+      "You can always search for anything you want.",
   },
   {
     image: "/img/section3_04.jpg",
-    title: "Categories",
+    title: "Take a Pin",
     direction:
       "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
   },
   {
     image: "/img/section3_05.jpg",
-    title: "Discover and re-discover",
+    title: "Capture The moment",
     direction:
-      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+      "Your picture will be automatically pinned on the map via geotagging!",
+  },
+  {
+    image: "/img/section3_05.jpg",
+    title: "Share Stories",
+    direction:
+      "Share your stories and pins with your friends!",
   },
 ];
 
@@ -88,8 +94,8 @@ const SliderTitle = styled.div`
   color: rgb(0, 0, 102);
   font-size: 20px;
   font-weight: 400;
-  margin-top: 85px;
-  margin-bottom: 85px;
+  margin-top: 24px;
+  margin-bottom: 24px;
   width: 120px;
 `;
 

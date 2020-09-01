@@ -5,7 +5,7 @@ import { Card } from "../card";
 const Container = styled.div`
   max-width: 1250px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 160px;
   @media (max-width: 800px) {
     margin-top: 150px;
   }
@@ -15,6 +15,7 @@ const Title = styled.div`
   color: #000066;
   font-size: 54px;
   font-weight: 900;
+  text-align: center;
   margin-left: 20px;
   @media (max-width: 800px) {
     font-size: 40px;
@@ -23,11 +24,12 @@ const Title = styled.div`
 `;
 
 const Description = styled.div`
-  font-size: 12px;
-  margin-left: 20px;
+  font-size: 14px;
+  text-align: center;
   margin-bottom: 100px;
   @media (max-width: 800px) {
-    width: 250px;
+    font-size: 11px;
+    margin: 0 1rem;
   }
 `;
 

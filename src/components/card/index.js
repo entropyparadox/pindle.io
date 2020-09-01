@@ -10,7 +10,7 @@ const cardlist = [
     tag: "#Faroelslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to iceland whithout....",
-    star: "⭐️⭐️⭐️⭐️",
+    star: "⭐️⭐️⭐️⭐️⭐️",
     review:
       "At first, I couldnt undrstand how to use it,but the more one used Pindle,the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
   },
@@ -19,30 +19,30 @@ const cardlist = [
     name: "Samuel",
     tag: "#Turkey #India # Thailand",
     description:
-      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
-    star: "⭐️⭐️⭐️",
+      "I decided to travel to Turkey to celebrate my 3rd wedding anniversary. I stayed there because I had an acquaintance in Turkey..",
+    star: "⭐️⭐️⭐️⭐️",
     review:
-      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+      "This feels like Google Maps + Instagram! The geotagging and map feature of google maps combined with the social aspect of Instagram!",
   },
   {
     image: "/img/0003.jpg",
     name: "Alexandria",
-    tag: "#Faroelslands #Iceland #Norway",
+    tag: "#United Stated #Canada # Brazil",
     description:
-      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+      "Traveling in America was an opportunity to realize that the world was wide and that one should live hard.",
     star: "⭐️⭐️⭐️⭐️",
     review:
-      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+      "More convenient than Instagram! It's easy to see where you've traveled. And it can be easily recorded. It's a great app than anything else.",
   },
   {
     image: "/img/0004.jpg",
     name: "Liam",
-    tag: "#Faroelslands #Iceland #Norway",
+    tag: "#Japan #China # Korea",
     description:
-      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
+      "So I'm going to write a short trip to Taiwan for 3 nights and four days. It's my first time visiting Taiwan. This is my third visit because I have traveled to Taipei and Kaohsiung.",
     star: "⭐️⭐️⭐️⭐️⭐️",
     review:
-      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
+      "I feel like I have traveled to various places.With this app, you can enjoy not only tourist attractions, but also restaurants, shopping and culture. You can travel around the world, even to lesser-known areas. Anyone who likes to travel should definitely install this app.",
   },
   {
     image: "/img/0002.jpg",

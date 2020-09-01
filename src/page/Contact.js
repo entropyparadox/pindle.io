@@ -162,7 +162,7 @@ export const Contact = () => {
             <SubTitle>Drop us a message</SubTitle>
             <EmailBox>
               <EmailTitle>E-mail</EmailTitle>
-              <Email>0000@pindle.com</Email>
+              <Email>info@pindle.io</Email>
             </EmailBox>
           </CardBox>
           <CardBox>
@@ -180,7 +180,7 @@ export const Contact = () => {
         </Box>
         <Locate>Locate</Locate>
         <div style={{ textAlign: "center" }}>
-          <LocateImg src="/img/locate.png" alt="img" />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6661208934183!2d127.0380026150581!3d37.515792134790864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40aa98232c7%3A0x7d5bfbddaecb91b4!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmIQy64-ZIO2VmeuPmeuhnDUw6ri4IDEz!5e0!3m2!1sko!2skr!4v1598952817912!5m2!1sko!2skr" width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <LocateText>
           13 Hakdong-ro 50-gil,

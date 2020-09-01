@@ -4,34 +4,34 @@ import styled from "styled-components";
 
 const Profile = [
   {
-    image: "/img/자산 11@3x-100.jpg",
-    position: "Team Manager",
-    name: "Kang kei kim",
-  },
-  {
-    image: "/img/자산 12@3x-100.jpg",
+    image: "/img/자산 16@3x-100.jpg",
     position: "Team Manager",
     name: "Kang kei kim",
   },
   {
     image: "/img/자산 13@3x-100.jpg",
     position: "Team Manager",
-    name: "Kang kei kim",
+    name: "Mijin Kim",
   },
   {
     image: "/img/자산 14@3x-100.jpg",
+    position: "Marketer",
+    name: "Dominic Phua",
+  },
+  {
+    image: "/img/자산 11@3x-100.jpg",
     position: "Team Manager",
-    name: "Kang kei kim",
+    name: "Jason Chung",
   },
   {
     image: "/img/자산 15@3x-100.jpg",
-    position: "Team Manager",
-    name: "Kang kei kim",
+    position: "Product Manager",
+    name: "Khris Kang",
   },
   {
-    image: "/img/자산 16@3x-100.jpg",
-    position: "Team Manager",
-    name: "Kang kei kim",
+    image: "/img/자산 12@3x-100.jpg",
+    position: "Designer",
+    name: "Nicole Leaw",
   },
 ];
 
@@ -178,8 +178,9 @@ export const About = () => {
         <Title>Pindle records the time on the map</Title>
         <Line />
         <Description>
-          Founded in 2018, Pindle is a photography and social mobile app for iOS
-          and Android devices.
+          Founded in 2018, Pindle is a photography and social mobile app for iOS and Android devices. 
+          <br />
+          The travel themed social platform allows its users to capture, pin and share moments as photographs on the world map. 
           <br />
           The travel themed social platform allows its users to capture,
           <br />
@@ -188,14 +189,11 @@ export const About = () => {
         <Titles>Our story</Titles>
         <Line />
         <Description>
-          The company is currently based in South Korea and in the midst of
-          expanding to Singapore and the rest of South East Asia.
+          The company is currently based in South Korea and in the midst of expanding to Singapore and the rest of South East Asia. 
           <br />
-          CEO and Founder Kim Kang founded Pindle with the vision of bringing
-          the world to travelers and travels to the world.
+          CEO and Founder Kim Kang founded Pindle with the vision of bringing the world to travelers and travels to the world. 
           <br />
-          Pindle’s mission is to help everyone map their moments and bring the
-          world together.
+          Pindle’s mission is to help everyone map their moments and bring the world together.
         </Description>
         <TeamMembers>Team Members</TeamMembers>
         <ProfileContainer>

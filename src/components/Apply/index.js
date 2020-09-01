@@ -41,7 +41,7 @@ const Box = styled.div`
 
 const FromInput = styled.input`
   border-radius: 12px;
-  border: 1px solid #bebebe;
+  border: 1px solid #efefef;
   margin-right: ${(props) => (props.left ? "10px" : "0px")};
   height: 40px;
   box-sizing: border-box;
@@ -58,7 +58,7 @@ const FromInput = styled.input`
 
 const FromText = styled.textarea`
   width: 100%;
-  border: 1px solid #bebebe;
+  border: 1px solid #efefef;
   border-radius: 12px;
   box-sizing: border-box;
   outline: none;
