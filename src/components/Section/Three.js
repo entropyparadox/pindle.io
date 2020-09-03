@@ -54,7 +54,7 @@ const ReadMore = styled.button`
 export const Three = () => {
   return (
     <Container>
-      <Title>Who Use Pindle ?</Title>
+      <Title>Here’s what our users are saying</Title>
       <Description>
         Pin your adventures and oraganize all your photos in a better way
         <br />

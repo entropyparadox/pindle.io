@@ -147,37 +147,43 @@ export const Partners = () => {
       <PartnersHeader>PARTNERS</PartnersHeader>
       <Container>
         <Title first main>
-          We are looking for our partners.
+        Who are we looking for?
         </Title>
         <Description>
-We have curated a list of select NGOs that have partnered with us.
-Clicking on the badge will also bring the user straight to your website, social media or donation page. 
-Having your company’s badge featured will bring more publicity to your organization and awareness for your cause. 
-To be featured in our list,please apply below or send us an email at hr@pindle.io. 
-        </Description>
+        Is your organisation an NGO? <br />
+        If your answer is yes, we would love to partner with you! 
+         </Description>
         <LogoBox>
           {Logo.map((l) => (
             <LogoImg src={l.image} alt="logo" />
           ))}
         </LogoBox>
-        <Title main>How we can help our partners ?</Title>
+        <Title main>Why partner with us?  </Title>
         <Description>
-        At Pindle, we would like to partner with NGOs across the globe to give back to the community and the environment. 
-Whenever a user posts a picture, they are able to select up to 5 NGOs that they would like to support or feature. 
-After adding the badge onto their post, a list of NGOs that have partnered with us would appear. 
-From this list, the user is able to select up to five organizations of his/her choosing.
+        We would like to feature your organisation on our cafelly curated NGO Badge List! <br />
+        Having your company’s badge featured will bring more publicity to your organization and awareness for your cause. <br />
+        <br />
+        The best part is? <br />
+        It’s all free!<br />
+        We are not looking for anything in return. <br /><br />
+        At Pindle, we always believe in giving back to the world & community. <br /><br />
         </Description>
-        <System>Findle's badge system</System>
+        <Title main>How does the N.G.O Badge List work?</Title>
+        <Description>
+          Whenever a user posts a picture, they are able to select up to 5 NGOs that they would like to support or feature in their post.
+          <br />After adding the badge onto their post, a list of NGOs that have partnered with us would appear.
+          <br />From this list, the user is able to select up to five organizations of his/her choosing to be added as badges.
+          <br />Anyone who clicks on the badge will be brought straight to your website, social media or donation page.<br /><br />
+        </Description>
         <img
           src="/img/1111.png"
           alt="img"
           style={{ width: "100%", marginBottom: 80 }}
         />
-        <Title>Join pindle’s global partner nework</Title>
+        <Title>Join our Global Partner Program </Title>
         <Description>
-        Come work in partnership with Pindle to create incredible
-mission-first personalised experiences. Join Pindle’s Partner Program today 
-and let’s be successful together. Media enquiries are also welcomed.
+        If this all sounds awesome to you, we invite you to apply for Pindle’s Partner Program today. <br />
+        Simply fill in the form below and a representive from Pindle will be in touch shortly! 
         </Description>
         <Apply />
       </Container>

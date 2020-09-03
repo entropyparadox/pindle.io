@@ -44,16 +44,6 @@ const cardlist = [
     review:
       "I feel like I have traveled to various places.With this app, you can enjoy not only tourist attractions, but also restaurants, shopping and culture. You can travel around the world, even to lesser-known areas. Anyone who likes to travel should definitely install this app.",
   },
-  {
-    image: "/img/0002.jpg",
-    name: "Samuel",
-    tag: "#Turkey #India # Thailand",
-    description:
-      "Already a child when learning the European capitals, John was drawn to iceland whithout....",
-    star: "⭐️⭐️⭐️",
-    review:
-      "At first, I couldnt undrstand how to use it, but the more one used Pindle, the more you realise what a useful app this is! Imagine going to a foreign country and not knowing the language, this app allows you to instantly record places you have been!",
-  },
 ];
 
 const Container = styled.div`
@@ -73,7 +63,7 @@ const MobileContainer = styled.div`
 const CardBox = styled.div`
   border: 1px solid #ebebeb;
   padding: 30px;
-  height: 520px;
+  height: 550px;
   box-sizing: border-box;
   text-align: center;
   box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.03);
@@ -85,7 +75,7 @@ const CardBox = styled.div`
   }
   @media (max-width: 800px) {
     margin: 0 auto;
-    height: 450px;
+    // height: 450px;
     width: 230px !important;
     margin-bottom: 50px;
   }

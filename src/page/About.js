@@ -5,32 +5,32 @@ import styled from "styled-components";
 const Profile = [
   {
     image: "/img/자산 16@3x-100.jpg",
-    position: "Team Manager",
+    position: "CEO / Founder",
     name: "Kang kei kim",
   },
   {
     image: "/img/자산 13@3x-100.jpg",
-    position: "Team Manager",
+    position: "Creative",
     name: "Mijin Kim",
   },
   {
     image: "/img/자산 14@3x-100.jpg",
-    position: "Marketer",
+    position: "Marketing",
     name: "Dominic Phua",
   },
   {
     image: "/img/자산 11@3x-100.jpg",
-    position: "Team Manager",
+    position: "Business Development",
     name: "Jason Chung",
   },
   {
     image: "/img/자산 15@3x-100.jpg",
-    position: "Product Manager",
+    position: "Tech / Development",
     name: "Khris Kang",
   },
   {
     image: "/img/자산 12@3x-100.jpg",
-    position: "Designer",
+    position: "Design",
     name: "Nicole Leaw",
   },
 ];
@@ -175,27 +175,20 @@ export const About = () => {
       <DetailHeader />
       <AboutHeader>ABOUT</AboutHeader>
       <Container>
-        <Title>Pindle records the time on the map</Title>
+        <Title>The Flow of Time</Title>
         <Line />
         <Description>
-          Founded in 2018, Pindle is a photography and social mobile app for iOS and Android devices. 
-          <br />
-          The travel themed social platform allows its users to capture, pin and share moments as photographs on the world map. 
-          <br />
-          The travel themed social platform allows its users to capture,
-          <br />
-          pin and share moments as photographs on the world map.
+          Pindle was founded with the vision to Record Time on the Map.
         </Description>
-        <Titles>Our story</Titles>
+        <Titles>About Pindle</Titles>
         <Line />
         <Description>
-          The company is currently based in South Korea and in the midst of expanding to Singapore and the rest of South East Asia. 
-          <br />
-          CEO and Founder Kim Kang founded Pindle with the vision of bringing the world to travelers and travels to the world. 
-          <br />
-          Pindle’s mission is to help everyone map their moments and bring the world together.
+
+        Pindle is a photography and social mobile app for iOS and Android devices. <br />
+        The travel themed social platform allows its users to capture, <br />
+        pin and share moments as photographs on the world map. 
         </Description>
-        <TeamMembers>Team Members</TeamMembers>
+        <TeamMembers>Meet the Team</TeamMembers>
         <ProfileContainer>
           {Profile.map((p) => (
             <ProfileBox>

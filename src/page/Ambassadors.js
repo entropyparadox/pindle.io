@@ -46,70 +46,64 @@ const Profile = [
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
-  {
-    image: "/img/0004.jpg",
-    name: "a.dunkel",
-    tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
-  },
+    {
+      image: "/img/0004.jpg",
+      name: "a.dunkel",
+      tag: "#FaroeIslands #Iceland #Norway",
+      description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    },
   {
     image: "/img/0004.jpg",
     name: "julienduvalphoto",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "fueradeejeblog",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "jameslucian",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "bahadirsansarci",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "Dhana_Dee - Indonesian 🇮🇩",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "Marcin",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "Lee Seung Tae",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "park dong sik",
     tag: "#FaroeIslands #Iceland #Norway",
-    description:
-      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
+
+  
 ];
+
 
 const AmbassadorsHeader = styled.div`
   background: #ebebeb;
@@ -133,8 +127,8 @@ const Container = styled.div`
 
 const ProfileContainer = styled.div`
   display: flex;
-  margin-bottom: 100px;
   flex-wrap: wrap;
+  margin-bottom: 100px;
   @media (max-width: 800px) {
     display: block;
   }
@@ -201,8 +195,9 @@ export const Ambassadors = () => {
   return (
     <>
       <DetailHeader />
-      <AmbassadorsHeader>AMBASSADORS</AmbassadorsHeader>
+      <AmbassadorsHeader>WORK WITH US</AmbassadorsHeader>
       <Container>
+      <Title>Meet some of Pindle’s Global Brand Ambassadors </Title>
         <ProfileContainer>
           {Profile.map((p) => (
             <ProfileBox>
@@ -214,15 +209,22 @@ export const Ambassadors = () => {
             </ProfileBox>
           ))}
         </ProfileContainer>
-        <Title>Make a difference at pindle from anywhere in the world.</Title>
+        <Title>Make a Difference from Anywhere</Title>
         <Description>
-          We are looking for talented and independant
-          <br />
-          individuals to be a part of our Ambassador Crew.
-          <br />
-          Are you someone who loves travelling
-          <br />
-          and curating your own travel content?
+          If you: 
+          <br />love travelling to a range of exotic destinations, 
+          <br />loving snapping pictures 
+          <br />have an eye for re-discovering hidden gems. 
+          <br />well-versed in the digital world 
+          <br />thrive on social media platforms.
+          <br /><br />
+          <br />If this sounds like you, we would love to have you onboard Pindle’s exclusive Brand Ambassador Program!
+          <br /><br />
+          <br />Here are just a few of the benefits of joining this program:
+          <br />1. Attractive Cash Rewards
+          <br />2. Sponsored Trips
+          <br />3. Exclusive Invites
+          <br />4. Being a core part of the next big social media platform
         </Description>
         <Apply />
       </Container>

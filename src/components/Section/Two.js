@@ -5,40 +5,38 @@ import "slick-carousel/slick/slick.css";
 
 const list = [
   {
-    image: "/img/section3_01.jpg",
-    title: "Discover and re-discover",
-    direction:
-      "Discover untold stories and hidden attractions on the Pindle app. Re-discover a street you’ve been ignoring. ",
+    image: "/img/ths301.jpg",
+    title: "Your adventure awaits !!",
   },
   {
-    image: "/img/section3_02.jpg",
-    title: "Choose The categories",
+    image: "/img/ths302.jpg",
+    title: "Browse",
     direction:
-      "Choose the categories you want to explore! The categories include Culture, Food & Drink, Shopping, Nature, Lodging, Leisure.",
+      "There are hidden gems across the world and in your own neighborhood that are waiting to be discovered by you!",
   },
   {
-    image: "/img/section3_03.jpg",
-    title: "Let’s Search",
+    image: "/img/ths303.jpg",
+    title: "Filter",
     direction:
-      "You can always search for anything you want.",
+      "Content-Specific catergories based on your interests!",
   },
   {
-    image: "/img/section3_04.jpg",
-    title: "Take a Pin",
+    image: "/img/ths304.jpg",
+    title: "Search",
     direction:
-      "Take any picture with the Pindle camera - your surroundings, your favorite corner, anything! ",
+      "Not sure what to look for? Why not check out the latest hotspots and trending hashtags!",
   },
   {
-    image: "/img/section3_05.jpg",
-    title: "Capture The moment",
+    image: "/img/ths305.jpg",
+    title: "Pin",
     direction:
-      "Your picture will be automatically pinned on the map via geotagging!",
+      "Customise your location? Adding to your Favourites list? Make your post private? You can do it all! ",
   },
   {
-    image: "/img/section3_05.jpg",
-    title: "Share Stories",
+    image: "/img/ths306.jpg",
+    title: "Capture",
     direction:
-      "Share your stories and pins with your friends!",
+      "Be it uploading an old picture or taking new photos, The picture’s location will be automatically pinned on the map via geotagging!",
   },
 ];
 
@@ -259,7 +257,7 @@ export const Two = () => {
   return (
     <>
       <Container>
-        <Title>How it work</Title>
+        <Title>Mapping Moments</Title>
         <LeftArrow></LeftArrow>
         <SliderContainer>
           <Slider {...settings} style={{ outline: "none" }}>
@@ -275,7 +273,7 @@ export const Two = () => {
         <RightArrow></RightArrow>
       </Container>
       <MobileContainer>
-        <Title>How it work</Title>
+        <Title>Mapping Moments</Title>
         <MobileLeftArrow />
         <SliderContainer>
           <Slider {...setting} style={{ outline: "none", border: "none" }}>
