@@ -46,65 +46,70 @@ const Profile = [
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
-    {
-      image: "/img/0004.jpg",
-      name: "a.dunkel",
-      tag: "#FaroeIslands #Iceland #Norway",
-      description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
-    },
+  {
+    image: "/img/0004.jpg",
+    name: "a.dunkel",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
   {
     image: "/img/0004.jpg",
     name: "julienduvalphoto",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "fueradeejeblog",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "jameslucian",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "bahadirsansarci",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "Dhana_Dee - Indonesian 🇮🇩",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "Marcin",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "Lee Seung Tae",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
     image: "/img/0004.jpg",
     name: "park dong sik",
     tag: "#FaroeIslands #Iceland #Norway",
-    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    description:
+      "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
-
-  
 ];
-
-
 
 const AmbassadorsHeader = styled.div`
   background: #ebebeb;
@@ -128,8 +133,8 @@ const Container = styled.div`
 
 const ProfileContainer = styled.div`
   display: flex;
-  justify-content: space-between;
   margin-bottom: 100px;
+  flex-wrap: wrap;
   @media (max-width: 800px) {
     display: block;
   }
@@ -142,9 +147,16 @@ const ProfileBox = styled.div`
   padding: 30px 20px;
   box-sizing: border-box;
   box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.2);
+  margin-bottom: 20px;
   @media (max-width: 800px) {
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+  @media (min-width: 801px) {
+    margin-right: 20px;
+    :nth-child(6n) {
+      margin-right: 0px;
+    }
   }
 `;
 
