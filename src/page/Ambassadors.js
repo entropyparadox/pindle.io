@@ -5,48 +5,106 @@ import { Apply } from "../components/Apply";
 
 const Profile = [
   {
-    image: "/img/001.jpg",
-    name: "James Lucian",
+    image: "/img/0004.jpg",
+    name: "Alejandro BS",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/002.jpg",
-    name: "James Lucian",
+    image: "/img/0004.jpg",
+    name: "Pete Elliott",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/003.jpg",
-    name: "James Lucian",
+    image: "/img/0004.jpg",
+    name: "Himalayandrives",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/004.jpg",
-    name: "James Lucian",
+    image: "/img/0004.jpg",
+    name: "Adrien",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/005.jpg",
-    name: "James Lucian",
+    image: "/img/0004.jpg",
+    name: "hajducakmarek",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
   {
-    image: "/img/006.jpg",
-    name: "James Lucian",
+    image: "/img/0004.jpg",
+    name: "imroamingtheearth",
     tag: "#FaroeIslands #Iceland #Norway",
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
+    {
+      image: "/img/0004.jpg",
+      name: "a.dunkel",
+      tag: "#FaroeIslands #Iceland #Norway",
+      description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+    },
+  {
+    image: "/img/0004.jpg",
+    name: "julienduvalphoto",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "fueradeejeblog",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "jameslucian",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "bahadirsansarci",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "Dhana_Dee - Indonesian 🇮🇩",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "Marcin",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "Lee Seung Tae",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+  {
+    image: "/img/0004.jpg",
+    name: "park dong sik",
+    tag: "#FaroeIslands #Iceland #Norway",
+    description: "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
+  },
+
+  
 ];
+
+
 
 const AmbassadorsHeader = styled.div`
   background: #ebebeb;
