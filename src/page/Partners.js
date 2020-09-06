@@ -52,7 +52,7 @@ const Container = styled.div`
   margin: 0 auto;
   @media (max-width: 800px) {
     padding: 0px 20px;
-  }
+  }  
 `;
 
 const Title = styled.div`
@@ -61,12 +61,20 @@ const Title = styled.div`
   text-align: center;
   margin-top: ${(props) => (props.first ? "100px" : "0px")};
   margin-bottom: ${(props) => (props.main ? "30px" : "20px")};
+  @media (max-width: 800px) {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 4rem;
+  }    
 `;
 
 const Description = styled.div`
   color: #666;
   font-size: 14px;
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }    
 `;
 
 const LogoBox = styled.div`
