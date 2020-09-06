@@ -7,7 +7,7 @@ const Container = styled.div`
   margin: 0 auto;
   margin-top: 160px;
   @media (max-width: 800px) {
-    margin-top: 150px;
+    margin-top: 40px;
   }
 `;
 
@@ -18,8 +18,10 @@ const Title = styled.div`
   text-align: center;
   margin-left: 20px;
   @media (max-width: 800px) {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
+    margin: 0 3rem;
+    line-height: 2rem;
   }
 `;
 
@@ -29,7 +31,7 @@ const Description = styled.div`
   margin-bottom: 100px;
   @media (max-width: 800px) {
     font-size: 11px;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
   }
 `;
 

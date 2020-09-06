@@ -66,9 +66,9 @@ const Title = styled.div`
   font-weight: 900;
   margin-bottom: 100px;
   @media (max-width: 800px) {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
 `;
 
