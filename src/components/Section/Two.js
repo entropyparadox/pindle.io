@@ -38,6 +38,12 @@ const list = [
     direction:
       "Be it uploading an old picture or taking new photos, The picture’s location will be automatically pinned on the map via geotagging!",
   },
+  {
+    image: "/img/ths307.jpg",
+    title: "Share",
+    direction:
+      "Share your stories with your friends!",
+  },
 ];
 
 const Container = styled.div`
