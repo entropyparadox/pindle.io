@@ -183,11 +183,24 @@ export const Partners = () => {
           <br />From this list, the user is able to select up to five organizations of his/her choosing to be added as badges.
           <br />Anyone who clicks on the badge will be brought straight to your website, social media or donation page.<br /><br />
         </Description>
+
         <img
-          src="/img/1111.png"
+          src="/img/p01.png"
           alt="img"
-          style={{ width: "100%", marginBottom: 80 }}
+          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
+          
         />
+        <img
+          src="/img/p02.png"
+          alt="img"
+          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
+        />
+        <img
+          src="/img/p03.png"
+          alt="img"
+          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
+        />
+
         <Title>Join our Global Partner Program </Title>
         <Description>
         If this all sounds awesome to you, we invite you to apply for Pindle’s Partner Program today. <br />
