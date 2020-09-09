@@ -161,7 +161,7 @@ const RightArrow = styled.div`
   background-repeat: no-repeat;
   position: relative;
   left: 1320px;
-  bottom: 300px;
+  bottom: 327px;
   cursor: pointer;
   z-index: -1;
 `;
@@ -181,6 +181,7 @@ const SampleNextArrow = (props) => {
         top: "50%",
         transform: "translateY(-50%)",
         cursor: "pointer",
+        background: "red",
       }}
       onClick={onClick}
     />
@@ -202,6 +203,7 @@ const SamplePrevArrow = (props) => {
         top: "50%",
         transform: "translateY(-50%)",
         cursor: "pointer",
+        background: "red",
       }}
       onClick={onClick}
     />
@@ -226,7 +228,7 @@ const MobileRightArrow = styled.div`
   background-repeat: no-repeat;
   position: relative;
   left: 260px;
-  bottom: 265px;
+  bottom: 365px;
   cursor: pointer;
   z-index: -1;
 `;
@@ -243,7 +245,7 @@ const NextArrow = (props) => {
         right: -55,
         width: 40,
         height: 40,
-        top: "50%",
+        top: "42%",
         transform: "translateY(-50%)",
       }}
       onClick={onClick}
@@ -263,7 +265,7 @@ const PrevArrow = (props) => {
         left: -55,
         width: 40,
         height: 40,
-        top: "50%",
+        top: "42%",
         transform: "translateY(-50%)",
       }}
       onClick={onClick}

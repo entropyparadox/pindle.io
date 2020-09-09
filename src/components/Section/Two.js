@@ -17,8 +17,7 @@ const list = [
   {
     image: "/img/ths303.jpg",
     title: "Filter",
-    direction:
-      "Content-Specific catergories based on your interests!",
+    direction: "Content-Specific catergories based on your interests!",
   },
   {
     image: "/img/ths304.jpg",
@@ -109,7 +108,7 @@ const LeftArrow = styled.div`
   height: 30px;
   background-repeat: no-repeat;
   position: relative;
-  top: 360px;
+  top: 226px;
   cursor: pointer;
   left: -90px;
 `;
@@ -123,7 +122,7 @@ const RightArrow = styled.div`
   left: 1320px;
   bottom: 360px;
   cursor: pointer;
-  z-index: -1;
+  z-index: -10;
 `;
 
 const SampleNextArrow = (props) => {
@@ -138,7 +137,7 @@ const SampleNextArrow = (props) => {
         right: -100,
         width: 50,
         height: 50,
-        top: "50%",
+        top: "38%",
         transform: "translateY(-50%)",
         cursor: "pointer",
       }}
@@ -159,7 +158,7 @@ const SamplePrevArrow = (props) => {
         left: -100,
         width: 50,
         height: 50,
-        top: "50%",
+        top: "38%",
         transform: "translateY(-50%)",
         cursor: "pointer",
       }}
@@ -174,7 +173,7 @@ const MobileLeftArrow = styled.div`
   height: 30px;
   background-repeat: no-repeat;
   position: relative;
-  top: 360px;
+  top: 225px;
   cursor: pointer;
   left: 10px;
 `;
@@ -203,7 +202,7 @@ const NextArrow = (props) => {
         right: 0,
         width: 50,
         height: 50,
-        top: "50%",
+        top: "38%",
         transform: "translateY(-50%)",
         cursor: "pointer",
       }}
@@ -224,7 +223,7 @@ const PrevArrow = (props) => {
         left: 0,
         width: 50,
         height: 50,
-        top: "50%",
+        top: "38%",
         transform: "translateY(-50%)",
         cursor: "pointer",
         zIndex: "1000",
