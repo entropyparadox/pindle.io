@@ -59,6 +59,10 @@ const Title = styled.div`
   font-size: 32px;
   text-align: center;
   margin-top: 100px;
+  @media (max-width: 800px) {
+    margin-top: 40px;
+    font-size: 28px;
+  }
 `;
 
 const Titles = styled.div`
@@ -66,6 +70,9 @@ const Titles = styled.div`
   font-size: 32px;
   text-align: center;
   margin-top: 50px;
+  @media (max-width: 800px) {
+    font-size: 28px;
+  }
 `;
 
 const Line = styled.hr`
@@ -78,6 +85,10 @@ const Description = styled.div`
   color: #666;
   font-size: 14px;
   text-align: center;
+  @media (max-width: 800px) {
+    text-align: left;
+    margin: 0 1.4rem;
+  }
 `;
 
 const TeamMembers = styled.div`
@@ -147,6 +158,7 @@ const ProfileBox = styled.div`
   box-sizing: border-box;
   box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.1);
   @media (max-width: 800px) {
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
   }

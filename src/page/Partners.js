@@ -52,7 +52,7 @@ const Container = styled.div`
   margin: 0 auto;
   @media (max-width: 800px) {
     padding: 0px 20px;
-  }
+  }  
 `;
 
 const Title = styled.div`
@@ -61,12 +61,20 @@ const Title = styled.div`
   text-align: center;
   margin-top: ${(props) => (props.first ? "100px" : "0px")};
   margin-bottom: ${(props) => (props.main ? "30px" : "20px")};
+  @media (max-width: 800px) {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 4rem;
+  }    
 `;
 
 const Description = styled.div`
   color: #666;
   font-size: 14px;
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }    
 `;
 
 const LogoBox = styled.div`
@@ -175,11 +183,24 @@ export const Partners = () => {
           <br />From this list, the user is able to select up to five organizations of his/her choosing to be added as badges.
           <br />Anyone who clicks on the badge will be brought straight to your website, social media or donation page.<br /><br />
         </Description>
+
         <img
-          src="/img/1111.png"
+          src="/img/p01.png"
           alt="img"
-          style={{ width: "100%", marginBottom: 80 }}
+          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
+          
         />
+        <img
+          src="/img/p02.png"
+          alt="img"
+          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
+        />
+        <img
+          src="/img/p03.png"
+          alt="img"
+          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
+        />
+
         <Title>Join our Global Partner Program </Title>
         <Description>
         If this all sounds awesome to you, we invite you to apply for Pindle’s Partner Program today. <br />

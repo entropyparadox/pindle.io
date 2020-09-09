@@ -37,6 +37,12 @@ const list = [
     direction:
       "Be it uploading an old picture or taking new photos, The picture’s location will be automatically pinned on the map via geotagging!",
   },
+  {
+    image: "/img/ths307.jpg",
+    title: "Share",
+    direction:
+      "Share your stories with your friends!",
+  },
 ];
 
 const Container = styled.div`
@@ -65,9 +71,9 @@ const Title = styled.div`
   font-weight: 900;
   margin-bottom: 100px;
   @media (max-width: 800px) {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
 `;
 

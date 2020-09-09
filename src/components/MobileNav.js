@@ -9,6 +9,7 @@ const MenuContainer = styled.div`
   right: 0;
   top: 0;
   z-index: 10000;
+  opacity: 90%;
 `;
 
 const Backdrop = styled.div`
@@ -21,23 +22,28 @@ const Backdrop = styled.div`
 `;
 
 const MenuMobileContainer = styled.div`
-  background-color: #ebebeb;
+  background-color: #ffffff;
   bottom: 0;
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 0;
-  width: 200px;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: -0.3px;
+  width: 240px;
+  line-height: 3.4rem;
+  font-size: 20px;
+  font-weight: 900;
   z-index: 10000;
   height: auto;
   color: #000;
-  padding: 50px 30px 0px 0px;
+  padding: 3rem 3rem;
   justify-content: end;
   align-items: flex-end;
 `;
+
+const li = styled.div `
+  list-style: none;
+`;
+
 
 export const MobileNav = ({ handleClose }) => {
   return (
@@ -45,24 +51,51 @@ export const MobileNav = ({ handleClose }) => {
       <Backdrop onClick={handleClose} />
       <MenuMobileContainer>
         <ul>
-          <Link to={"/about"} style={{ textDecoration: "none", color: "#000" }}>
+          < Link to = {
+            "/about"
+          }
+          style = {
+            {
+              textDecoration: "none",
+              color: "#000",
+              listStyle: "none"
+            }
+          } >
             <li>ABOUT</li>
           </Link>
           <Link
             to={"/partners"}
-            style={{ textDecoration: "none", color: "#000" }}
+            style = {
+              {
+                textDecoration: "none",
+                color: "#000",
+                listStyle: "none"
+              }
+            }
           >
             <li>PARTNERS</li>
           </Link>
           <Link
             to={"/ambassadors"}
-            style={{ textDecoration: "none", color: "#000" }}
+            style = {
+              {
+                textDecoration: "none",
+                color: "#000",
+                listStyle: "none"
+              }
+            }
           >
             <li>AMBASSADORS</li>
           </Link>
           <Link
             to={"/contact"}
-            style={{ textDecoration: "none", color: "#000" }}
+            style = {
+              {
+                textDecoration: "none",
+                color: "#000",
+                listStyle: "none"
+              }
+            }
           >
             <li>CONTACT</li>
           </Link>

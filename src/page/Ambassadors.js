@@ -119,7 +119,7 @@ const AmbassadorsHeader = styled.div`
 const Container = styled.div`
   max-width: 1250px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 60px;
   @media (max-width: 800px) {
     padding: 0px 20px;
   }
@@ -144,7 +144,8 @@ const ProfileBox = styled.div`
   margin-bottom: 20px;
   @media (max-width: 800px) {
     margin: 0 auto;
-    margin-bottom: 10px;
+    padding: 0 auto;
+    margin-bottom: 30px;
   }
   @media (min-width: 801px) {
     margin-right: 20px;
