@@ -52,7 +52,7 @@ const Container = styled.div`
   margin: 0 auto;
   @media (max-width: 800px) {
     padding: 0px 20px;
-  }  
+  }
 `;
 
 const Title = styled.div`
@@ -65,7 +65,7 @@ const Title = styled.div`
     font-size: 28px;
     font-weight: 600;
     margin-top: 4rem;
-  }    
+  }
 `;
 
 const Description = styled.div`
@@ -74,7 +74,7 @@ const Description = styled.div`
   text-align: center;
   @media (max-width: 800px) {
     font-size: 13px;
-  }    
+  }
 `;
 
 const LogoBox = styled.div`
@@ -148,6 +148,14 @@ const System = styled.div`
   }
 `;
 
+const ImageBox = styled.div`
+  display: flex;
+  margin: 0 auto;
+  @media (max-width: 800px) {
+    display: block;
+  }
+`;
+
 export const Partners = () => {
   return (
     <>
@@ -155,56 +163,80 @@ export const Partners = () => {
       <PartnersHeader>PARTNERS</PartnersHeader>
       <Container>
         <Title first main>
-        Who are we looking for?
+          Who are we looking for?
         </Title>
         <Description>
-        Is your organisation an NGO? <br />
-        If your answer is yes, we would love to partner with you! 
-         </Description>
+          Is your organisation an NGO? <br />
+          If your answer is yes, we would love to partner with you!
+        </Description>
         <LogoBox>
           {Logo.map((l) => (
             <LogoImg src={l.image} alt="logo" />
           ))}
         </LogoBox>
-        <Title main>Why partner with us?  </Title>
+        <Title main>Why partner with us? </Title>
         <Description>
-        We would like to feature your organisation on our cafelly curated NGO Badge List! <br />
-        Having your company’s badge featured will bring more publicity to your organization and awareness for your cause. <br />
-        <br />
-        The best part is? <br />
-        It’s all free!<br />
-        We are not looking for anything in return. <br /><br />
-        At Pindle, we always believe in giving back to the world & community. <br /><br />
+          We would like to feature your organisation on our cafelly curated NGO
+          Badge List! <br />
+          Having your company’s badge featured will bring more publicity to your
+          organization and awareness for your cause. <br />
+          <br />
+          The best part is? <br />
+          It’s all free!
+          <br />
+          We are not looking for anything in return. <br />
+          <br />
+          At Pindle, we always believe in giving back to the world & community.{" "}
+          <br />
+          <br />
         </Description>
         <Title main>How does the N.G.O Badge List work?</Title>
         <Description>
-          Whenever a user posts a picture, they are able to select up to 5 NGOs that they would like to support or feature in their post.
-          <br />After adding the badge onto their post, a list of NGOs that have partnered with us would appear.
-          <br />From this list, the user is able to select up to five organizations of his/her choosing to be added as badges.
-          <br />Anyone who clicks on the badge will be brought straight to your website, social media or donation page.<br /><br />
+          Whenever a user posts a picture, they are able to select up to 5 NGOs
+          that they would like to support or feature in their post.
+          <br />
+          After adding the badge onto their post, a list of NGOs that have
+          partnered with us would appear.
+          <br />
+          From this list, the user is able to select up to five organizations of
+          his/her choosing to be added as badges.
+          <br />
+          Anyone who clicks on the badge will be brought straight to your
+          website, social media or donation page.
+          <br />
+          <br />
         </Description>
 
-        <img
-          src="/img/p01.png"
-          alt="img"
-          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
-          
-        />
-        <img
-          src="/img/p02.png"
-          alt="img"
-          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
-        />
-        <img
-          src="/img/p03.png"
-          alt="img"
-          style={{ width: "33.3%", marginBottom: 80, padding: "1rem" }}
-        />
+        <ImageBox>
+          <div>
+            <img
+              src="/img/p01.png"
+              alt="img"
+              style={{ width: "100%", marginBottom: 40, padding: "1rem" }}
+            />
+          </div>
+          <div>
+            <img
+              src="/img/p02.png"
+              alt="img"
+              style={{ width: "100%", marginBottom: 40, padding: "1rem" }}
+            />
+          </div>
+          <div>
+            <img
+              src="/img/p03.png"
+              alt="img"
+              style={{ width: "100%", marginBottom: 80, padding: "1rem" }}
+            />
+          </div>
+        </ImageBox>
 
         <Title>Join our Global Partner Program </Title>
         <Description>
-        If this all sounds awesome to you, we invite you to apply for Pindle’s Partner Program today. <br />
-        Simply fill in the form below and a representive from Pindle will be in touch shortly! 
+          If this all sounds awesome to you, we invite you to apply for Pindle’s
+          Partner Program today. <br />
+          Simply fill in the form below and a representive from Pindle will be
+          in touch shortly!
         </Description>
         <Apply />
       </Container>
