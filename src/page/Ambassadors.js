@@ -5,6 +5,13 @@ import { Apply } from "../components/Apply";
 
 const Profile = [
   {
+    image: "/img/a01.jpg",
+    name: "bahadirsansarci",
+    tag: "#nature #life #photography #scenery #travel #wildlife",
+    description:
+      "And the light shines in the darkness / Et lux in tenebris lucet",
+  },
+  {
     image: "/img/0004.jpg",
     name: "Alejandro BS",
     tag: "#FaroeIslands #Iceland #Norway",
@@ -81,6 +88,7 @@ const Profile = [
     description:
       "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
   },
+
   {
     image: "/img/0004.jpg",
     name: "Dhana_Dee - Indonesian 🇮🇩",
@@ -160,8 +168,8 @@ const ProfileBox = styled.div`
 `;
 
 const ProfileImg = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 140px;
+  height: 140px;
 `;
 
 const ProfileName = styled.div`
