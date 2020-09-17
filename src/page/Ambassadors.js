@@ -171,6 +171,11 @@ const ProfileImg = styled.img`
   width: 140px;
   height: 140px;
   border-radius: 2rem;
+  @media (max-width: 400px) {
+  width: 100px;
+  height: 100px;
+    }
+
 `;
 
 const ProfileName = styled.div`
