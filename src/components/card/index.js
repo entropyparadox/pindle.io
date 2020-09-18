@@ -44,16 +44,6 @@ const cardlist = [
     review:
       "I feel like I have traveled to various places.With this app, you can enjoy not only tourist attractions, but also restaurants, shopping and culture. You can travel around the world, even to lesser-known areas. Anyone who likes to travel should definitely install this app.",
   },
-  {
-    image: "/img/0004.jpg",
-    name: "Liam",
-    tag: "#Japan #China # Korea",
-    description:
-      "So I'm going to write a short trip to Taiwan for 3 nights and four days. It's my first time visiting Taiwan. This is my third visit because I have traveled to Taipei and Kaohsiung.",
-    star: "⭐️⭐️⭐️⭐️⭐️",
-    review:
-      "I feel like I have traveled to various places.With this app, you can enjoy not only tourist attractions, but also restaurants, shopping and culture. You can travel around the world, even to lesser-known areas. Anyone who likes to travel should definitely install this app.",
-  },
 ];
 
 const Container = styled.div`
@@ -85,7 +75,6 @@ const CardBox = styled.div`
   }
   @media (max-width: 800px) {
     margin: 0 auto;
-    // height: 450px;
     width: 230px !important;
     margin-bottom: 50px;
   }

@@ -65,7 +65,7 @@ export const Three = () => {
         Find the pictures you wnat in a flash.
       </Description>
       <Card />
-      <ReadMore>Read More</ReadMore>
+      {/* <ReadMore>Read More</ReadMore> */}
     </Container>
   );
 };
