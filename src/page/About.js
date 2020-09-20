@@ -1,6 +1,8 @@
 import React from "react";
 import { DetailHeader } from "../components/DetailHeader";
 import styled from "styled-components";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
 const Profile = [
   {
@@ -27,6 +29,11 @@ const Profile = [
     image: "/img/자산 15@3x-100.jpg",
     position: "Tech / Development",
     name: "Khris Kang",
+  },
+  {
+    image: "/img/자산 12@3x-100.jpg",
+    position: "Design",
+    name: "Nicole Leaw",
   },
   {
     image: "/img/자산 12@3x-100.jpg",
@@ -140,25 +147,32 @@ const TeamMembers = styled.div`
 `;
 
 const ProfileContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 130px;
-
   @media (max-width: 800px) {
-    display: block;
+    display: none;
   }
 `;
 
+const MobileProfileContainer = styled.div`
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 130px;
+  @media (min-width: 801px) {
+    display: none;
+  }
+`;
 const ProfileBox = styled.div`
-  width: 180px;
+  width: 180px !important;
   height: 280px;
   border: 1px solid #ebebeb;
   text-align: center;
   padding: 30px 20px;
   box-sizing: border-box;
   box-shadow: 5px 5px 30px rgba(68, 68, 68, 0.1);
+  margin-left: 12px;
+  margin-right: 12px;
   @media (max-width: 800px) {
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto;
     margin-bottom: 10px;
   }
@@ -167,6 +181,7 @@ const ProfileBox = styled.div`
 const ProfileImg = styled.img`
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 `;
 
 const ProfilePosition = styled.div`
@@ -181,7 +196,139 @@ const ProfileName = styled.div`
   color: #666;
 `;
 
+const LeftArrow = styled.div`
+  background-image: url("/img/Arrow.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 132px;
+  cursor: pointer;
+  left: -60px;
+  @media (max-width: 800px) {
+    left: 15px;
+    top: 153px;
+  }
+`;
+
+const RightArrow = styled.div`
+  background-image: url("/img/ArrowRight.svg");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 1280px;
+  bottom: 305px;
+  cursor: pointer;
+  z-index: -11;
+  @media (max-width: 800px) {
+    left: 300px;
+    bottom: 296px;
+  }
+`;
+
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        right: -55,
+        width: 40,
+        height: 40,
+        top: "42%",
+        transform: "translateY(-50%)",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const PrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        left: -55,
+        width: 40,
+        height: 40,
+        top: "42%",
+        transform: "translateY(-50%)",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        right: -60,
+        width: 40,
+        height: 40,
+        top: "47.5%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        position: "absolute",
+        left: -60,
+        width: 40,
+        height: 40,
+        top: "47.5%",
+        transform: "translateY(-50%)",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
 export const About = () => {
+  var setting = {
+    infinite: true,
+    speed: 900,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    autoplay: true,
+  };
+
+  var settings = {
+    infinite: true,
+    speed: 900,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+  };
   return (
     <>
       <DetailHeader />
@@ -195,22 +342,38 @@ export const About = () => {
         <Titles>About Pindle</Titles>
         <Line />
         <Description>
-
-        Pindle is a photography and social mobile app for iOS and Android devices. <br />
-        The travel themed social platform allows its users to capture, <br />
-        pin and share moments as photographs on the world map. 
+          Pindle is a photography and social mobile app for iOS and Android
+          devices. <br />
+          The travel themed social platform allows its users to capture, <br />
+          pin and share moments as photographs on the world map.
         </Description>
         <TeamMembers>Meet the Team</TeamMembers>
+        <LeftArrow />
         <ProfileContainer>
-          {Profile.map((p) => (
-            <ProfileBox>
-              <ProfileImg src={p.image} alt="img" />
-              <hr style={{ width: 100, margin: "35px auto" }} />
-              <ProfilePosition>{p.position}</ProfilePosition>
-              <ProfileName>{p.name}</ProfileName>
-            </ProfileBox>
-          ))}
+          <Slider {...setting}>
+            {Profile.map((p) => (
+              <ProfileBox>
+                <ProfileImg src={p.image} alt="img" />
+                <hr style={{ width: 100, margin: "35px auto" }} />
+                <ProfilePosition>{p.position}</ProfilePosition>
+                <ProfileName>{p.name}</ProfileName>
+              </ProfileBox>
+            ))}
+          </Slider>
         </ProfileContainer>
+        <MobileProfileContainer>
+          <Slider {...settings}>
+            {Profile.map((p) => (
+              <ProfileBox>
+                <ProfileImg src={p.image} alt="img" />
+                <hr style={{ width: 100, margin: "35px auto" }} />
+                <ProfilePosition>{p.position}</ProfilePosition>
+                <ProfileName>{p.name}</ProfileName>
+              </ProfileBox>
+            ))}
+          </Slider>
+        </MobileProfileContainer>
+        <RightArrow />
       </Container>
     </>
   );
