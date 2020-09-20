@@ -6,10 +6,16 @@ import { About } from "./page/About";
 import { Partners } from "./page/Partners";
 import { Ambassadors } from "./page/Ambassadors";
 import { Contact } from "./page/Contact";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Pindle</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/partners" component={Partners} />
