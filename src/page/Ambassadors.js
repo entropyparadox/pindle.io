@@ -32,20 +32,20 @@ const Profile = [
     description:
       "Drea Castro is a photographer/ documentary filmmaker with a passion for traveling the world and experiencing different cultures.... ",
   },
-  // {
-  //   image: "/img/0004.jpg",
-  //   name: "Adrien",
-  //   tag: "#FaroeIslands #Iceland #Norway",
-  //   description:
-  //     "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
-  // },
-  // {
-  //   image: "/img/0004.jpg",
-  //   name: "hajducakmarek",
-  //   tag: "#FaroeIslands #Iceland #Norway",
-  //   description:
-  //     "Already a child when learning the European capitals, John was drawn to Iceland without.... ",
-  // },
+  {
+    image: "/img/a05.jpg",
+    name: "Артем Дункель",
+    tag: "#time_to_see",
+    description:
+      "Born and living in Siberia, Russia",
+  },
+  {
+    image: "/img/a06.jpg",
+    name: "Facundo Gualchi",
+    tag: "#vivirviajando #mochilero #argentino",
+    description:
+      "Go to explore the world. Is more fantastic than any dream",
+  },
   // {
   //   image: "/img/0004.jpg",
   //   name: "imroamingtheearth",

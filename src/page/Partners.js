@@ -4,36 +4,36 @@ import styled from "styled-components";
 import { Apply } from "../components/Apply";
 
 const Logo = [
-  {
-    image: "/img/자산 1@3x-100.jpg",
-  },
+  // {
+  //   image: "/img/자산 1@3x-100.jpg",
+  // },
   {
     image: "/img/자산 2@3x-100.jpg",
   },
-  {
-    image: "/img/자산 3@3x-100.jpg",
-  },
-  {
-    image: "/img/자산 4@3x-100.jpg",
-  },
-  {
-    image: "/img/자산 5@3x-100.jpg",
-  },
-  {
-    image: "/img/자산 6@3x-100.jpg",
-  },
-  {
-    image: "/img/자산 7@3x-100.jpg",
-  },
+  // {
+  //   image: "/img/자산 3@3x-100.jpg",
+  // },
+  // {
+  //   image: "/img/자산 4@3x-100.jpg",
+  // },
+  // {
+  //   image: "/img/자산 5@3x-100.jpg",
+  // },
+  // {
+  //   image: "/img/자산 6@3x-100.jpg",
+  // },
+  // {
+  //   image: "/img/자산 7@3x-100.jpg",
+  // },
   {
     image: "/img/자산 8@3x-100.jpg",
   },
-  {
-    image: "/img/자산 9@3x-100.jpg",
-  },
-  {
-    image: "/img/자산 10@3x-100.jpg",
-  },
+  // {
+  //   image: "/img/자산 9@3x-100.jpg",
+  // },
+  // {
+  //   image: "/img/자산 10@3x-100.jpg",
+  // },
 ];
 
 const PartnersHeader = styled.div`
@@ -79,7 +79,7 @@ const Description = styled.div`
 
 const LogoBox = styled.div`
   text-align: center;
-  width: 680px;
+  width: 300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@ const LogoBox = styled.div`
 `;
 
 const LogoImg = styled.img`
-  width: 60px;
+  width: 100px;
   @media (max-width: 800px) {
     margin-bottom: 10px;
     width: 60px;
