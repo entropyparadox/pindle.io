@@ -35,11 +35,6 @@ const Profile = [
     position: "Design",
     name: "Nicole Leaw",
   },
-  {
-    image: "/img/자산 12@3x-100.jpg",
-    position: "Design",
-    name: "Nicole Leaw",
-  },
 ];
 
 const Container = styled.div`

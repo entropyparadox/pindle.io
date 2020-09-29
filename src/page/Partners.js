@@ -86,7 +86,7 @@ const LogoBox = styled.div`
   margin-top: 80px;
   margin-bottom: 80px;
   @media (max-width: 800px) {
-    width: 100%;
+    width: 50%;
     flex-wrap: wrap;
   }
 `;
