@@ -28,7 +28,7 @@ const Profile = [
   {
     image: "/img/자산 15@3x-100.jpg",
     position: "Tech / Development",
-    name: "Khris Kang",
+    name: "Khris Kang"
   },
   {
     image: "/img/자산 12@3x-100.jpg",
@@ -53,7 +53,7 @@ const AboutHeader = styled.div`
   align-items: center;
   font-size: 32px;
   color: #000044;
-  margin-top: 60px;
+  margin-top: 59px;
 `;
 
 const Title = styled.div`
