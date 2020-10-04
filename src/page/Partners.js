@@ -210,21 +210,21 @@ export const Partners = () => {
         <ImageBox>
           <div>
             <img
-              src="/img/p01.png"
+              src="/img/p04.png"
               alt="img"
               style={{ width: "100%", marginBottom: 40, padding: "1rem" }}
             />
           </div>
           <div>
             <img
-              src="/img/p02.png"
+              src="/img/p05.png"
               alt="img"
               style={{ width: "100%", marginBottom: 40, padding: "1rem" }}
             />
           </div>
           <div>
             <img
-              src="/img/p03.png"
+              src="/img/p06.png"
               alt="img"
               style={{ width: "100%", marginBottom: 80, padding: "1rem" }}
             />
